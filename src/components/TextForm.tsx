@@ -117,7 +117,7 @@ const TextForm = ({
         </p>
         <p>
           {0.08 *
-            text.split(" ").filter((element) => {
+            text.split(/\s+/).filter((element) => {
               return element.length != 0;
             }).length}{" "}
           minutes read.
